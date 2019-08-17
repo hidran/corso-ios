@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:My first xcode app.xcodeproj">
+      location = "self:/Users/Hidran/PROJECTS/XCODE12/My first xcode app/My first xcode app.xcodeproj">
    </FileRef>
 </Workspace>
