@@ -10,11 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var btnHello: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+         print("view did load")
+        
     }
 
-
+    @IBAction func btnDidClicked(_ sender: UIButton) {
+        print("button clicked")
+        btnHello.setTitle("you clicked me", for: .normal)
+    }
+    
 }
 

@@ -18,18 +18,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VVR-Gh-K0J">
-                                <rect key="frame" x="101" y="312" width="224" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VVR-Gh-K0J">
+                                <rect key="frame" x="82" y="418" width="250" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="3AL-B6-rXF"/>
+                                    <constraint firstAttribute="height" constant="60" id="c9q-QW-S1e"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <state key="normal" title="HELLO WORLD">
                                     <color key="titleColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnDidClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lOJ-07-fvb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.58105844259999995" green="0.12855249639999999" blue="0.57453137639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VVR-Gh-K0J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JjB-ho-yYU"/>
+                            <constraint firstItem="VVR-Gh-K0J" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ZdW-0i-hGp"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="btnHello" destination="VVR-Gh-K0J" id="ulB-Kz-vj4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
