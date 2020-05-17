@@ -112,6 +112,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="btnArea" destination="jIs-28-F6R" id="o1i-7g-PiN"/>
+                        <outlet property="btnClear" destination="ONg-nh-whJ" id="otg-X4-745"/>
+                        <outlet property="btnPer" destination="38B-rG-9r2" id="yG0-Nf-pnq"/>
                         <outlet property="heightField" destination="bRK-TO-4c5" id="QQB-UO-Nis"/>
                         <outlet property="result" destination="h4W-I3-tdT" id="swK-vz-T5A"/>
                         <outlet property="widthField" destination="JB1-Hr-A3D" id="fBJ-wx-QjV"/>

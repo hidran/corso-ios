@@ -15,10 +15,21 @@ class ViewController: UIViewController {
     @IBOutlet weak var heightField: UITextField!
     @IBOutlet weak var result: UILabel!
     
+    @IBOutlet weak var btnArea: UIButton!
+    
+    @IBOutlet weak var btnPer: UIButton!
+    
+    @IBOutlet weak var btnClear: UIButton!
+    
+    
+    
     override func viewDidLoad() {
      
         super.viewDidLoad()
-        
+        btnArea.layer.cornerRadius = 5
+        btnPer.layer.cornerRadius = 5
+        btnClear.layer.cornerRadius = 5
+        result.layer.cornerRadius = 5
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -26,7 +37,7 @@ class ViewController: UIViewController {
     }
     @IBAction func calcArea(_ sender: UIButton) {
       
-        calc2(what: "area")
+        calc3(what: "area")
       
        //
     }
@@ -74,6 +85,25 @@ class ViewController: UIViewController {
                                                 
                      
        }
-   
+    
+   func calc3(what:String) {
+              
+    guard let w =  NumberFormatter().number(from: widthField.text ?? "0")  as? Double else {
+         result.text = "wrong width"
+        return
+    }
+                           
+    guard    let h = NumberFormatter().number(from:heightField.text ?? "0") as? Double else {
+        result.text = "wrong height"
+             return
+    }
+          
+               let resultOp = what == "area" ? w*h : (w+h) * 2
+                               
+               result.text = String.localizedStringWithFormat("%1.2f", resultOp)
+     
+                       
+         }
+      
 }
 
